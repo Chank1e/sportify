@@ -1,0 +1,49 @@
+/* Global styles for the application */
+@import 'library/tokens/variables.less';
+
+/* Prevent text selection */
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Allow text selection in input fields and textareas */
+input, textarea {
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
+/* Reset default styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: @font-family-base;
+}
+
+/* Smooth scrolling */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Better box model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove focus outline for non-keyboard navigation */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Improve focus visibility for keyboard navigation */
+:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+} 
