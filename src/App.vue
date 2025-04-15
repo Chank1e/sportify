@@ -27,5 +27,9 @@ import { Flex } from 'library';
 </template>
 
 <style lang="less" scoped>
-@import './components/library/tokens/variables.less';
+@import 'library/tokens/variables.less';
+
+.header {
+	margin-bottom: @spacing-unit * 4;
+}
 </style>

@@ -24,10 +24,11 @@ const {isDragging} = storeToRefs(appWindowStore);
 	display: flex;
 	flex-direction: column;
 	transition: @transition-base;
-	border: 3px solid @primary-color;
+	opacity: 0.75;
 
 	&:hover {
 		background: rgba(0, 0, 0, 0.25);
+		opacity: 1;
 	}
 
 	&__dragging {

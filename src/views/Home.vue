@@ -1,8 +1,6 @@
 <template>
 	<div class="home">
-		<Flex>
       <Match />
-    </Flex>
 	</div>
 </template>
 
